@@ -7,6 +7,7 @@ export default Ember.Component.extend({
       this.set('updateAnnouncementForm', true);
     },
     updateAnnouncement(announcement){
+      
       var params = {
         message: this.get('message'),
       };
