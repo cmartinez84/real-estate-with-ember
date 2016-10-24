@@ -11,8 +11,9 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model.announcements as |announcement|}}
-    {{announcement-tile announcement=announcement}}
+    {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
   {{/each}}
+
 </ul>
 {{new-announcement saveAnnouncement2="saveAnnouncement3"}}
 
