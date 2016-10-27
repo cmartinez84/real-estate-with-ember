@@ -2,5 +2,8 @@
 available by arrangement through {{rental.owner}}.</h1>
 <br>
 <p><img src={{rental.image}} alt={{rental.type}}></p>
-
+<h2>Reviews</h2>
+{{#each rental.reviews as |review|}}
+  {{review-tile review=review}}
+{{/each}}
 <button {{action 'delete' rental}}>Delete</button>
